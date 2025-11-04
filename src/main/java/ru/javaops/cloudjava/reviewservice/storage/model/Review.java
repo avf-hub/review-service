@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.Hibernate;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.proxy.HibernateProxy;
 import org.springframework.format.annotation.DateTimeFormat;
 import ru.javaops.cloudjava.reviewservice.util.DateUtil;
 
@@ -34,6 +33,24 @@ public class Review {
     @CreationTimestamp
     @DateTimeFormat(pattern = DateUtil.DATE_FORMAT)
     private LocalDateTime createdAt;
+
+    public static Rating newRating(Long menuId) {
+        return newRating(menuId, 0, 0, 0, 0, 0);
+    }
+
+    public static Rating newRating(Long menuId, int one, int two, int three, int four, int five) {
+        return Rating.builder()
+                .id(null)
+                .menuId(menuId)
+                .rateOne(one)
+                .rateTwo(two)
+                .rateThree(three)
+                .rateFour(four)
+                .rateFive(five)
+                .wilsonScore(0.0f)
+                .avgStars(0.0f)
+                .build();
+    }
 
     /**
      * @see <a href="https://stackoverflow.com/a/78077907/548473">Переопределяем equals и hashCode</a>
