@@ -1,5 +1,6 @@
 package ru.javaops.cloudjava.reviewservice.testutil;
 
+import ru.javaops.cloudjava.reviewservice.dto.CreateReviewRequest;
 import ru.javaops.cloudjava.reviewservice.storage.model.Rating;
 
 import java.util.List;
@@ -47,5 +48,13 @@ public class TestData {
                 ratingMenuSeven(),
                 ratingMenuEight()
         );
+    }
+
+    public static CreateReviewRequest createReviewRequest(Long menuId, Integer rate) {
+        return CreateReviewRequest.builder()
+                .menuId(menuId)
+                .comment("This is a comment")
+                .rate(rate)
+                .build();
     }
 }

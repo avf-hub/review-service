@@ -40,6 +40,13 @@ public class TestUtils {
         assertThat(actual).isEqualTo(expected);
     }
 
+    public static void compareDefaultMenuInfo(Long noRatingMenu, MenuRatingInfo rating) {
+        Float zero = 0.0f;
+        assertThat(rating.getAvgStars()).isEqualTo(zero);
+        assertThat(rating.getWilsonScore()).isEqualTo(zero);
+        assertThat(rating.getMenuId()).isEqualTo(noRatingMenu);
+    }
+
     public static MenuRatingInfo calculateWilsonScoreAvgStars(Rating rating) {
         var positive = rating.getRateFive() * 1.0 +
                 rating.getRateFour() * 0.75 +
