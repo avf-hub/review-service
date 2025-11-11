@@ -4,9 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlGroup;
+import ru.javaops.cloudjava.reviewservice.storage.model.MenuRatingInfo;
 import ru.javaops.cloudjava.reviewservice.storage.model.Rating;
 import ru.javaops.cloudjava.reviewservice.storage.repositories.RatingRepository;
 
+import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static ru.javaops.cloudjava.reviewservice.testutil.TestUtils.incrementExpectedRating;
 
 @ActiveProfiles("test")
@@ -55,5 +57,12 @@ public abstract class BaseTest {
         for (int i = 0; i < times; i++) {
             ratingRepository.incrementRating(menuId, rating);
         }
+    }
+
+    protected void compareDefaultMenuInfo(Long noRatingMenu, MenuRatingInfo rating) {
+        Float zero = 0.0f;
+        assertThat(rating.getAvgStars()).isEqualTo(zero);
+        assertThat(rating.getWilsonScore()).isEqualTo(zero);
+        assertThat(rating.getMenuId()).isEqualTo(noRatingMenu);
     }
 }
