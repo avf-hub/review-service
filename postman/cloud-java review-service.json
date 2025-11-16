@@ -1,0 +1,453 @@
+{
+	"info": {
+		"_postman_id": "85a8ada8-7a5c-4120-a79c-a6011967f2ce",
+		"name": "cloud-java review-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14134951"
+	},
+	"item": [
+		{
+			"name": "Create Review By Alex Menu 1 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Alex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 1,\n    \"comment\": \"Comment\",\n    \"rate\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review By Alex Menu 2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Alex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 2,\n    \"comment\": \"Comment\",\n    \"rate\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review By Alex Menu 3 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Alex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 3,\n    \"comment\": \"Comment\",\n    \"rate\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review By John Menu 1 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "John",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 1,\n    \"comment\": \"Comment\",\n    \"rate\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review By Michael Menu 1 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Michael",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 1,\n    \"comment\": \"Comment\",\n    \"rate\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review By Max Menu 1 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Max",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 1,\n    \"comment\": \"Comment\",\n    \"rate\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review By Phill Menu 1 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Phill",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 1,\n    \"comment\": \"Comment\",\n    \"rate\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review Fail Validation Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Alex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 1,\n    \"comment\": \" \",\n    \"rate\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review Fail Repeatable Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Alex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuId\": 1,\n    \"comment\": \"Comment\",\n    \"rate\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Review 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get reviews of menu 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews/menu-item/1?from-0&size=10&sortBy=date_asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews",
+						"menu-item",
+						"1"
+					],
+					"query": [
+						{
+							"key": "from-0",
+							"value": null
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sortBy",
+							"value": "date_asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get reviews of Alex",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-User-Name",
+						"value": "Alex",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews/my?from=0&size=10&sortBy=date_asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews",
+						"my"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sortBy",
+							"value": "date_asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ratings of menus 1, 2, 3, 4, 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"menuIds\": [1,2,3,4,5]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9093/v1/reviews/ratings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"v1",
+						"reviews",
+						"ratings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

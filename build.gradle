@@ -51,6 +51,14 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
 }
 
+bootBuildImage {
+    imageName = "${project.name}"
+    environment = ["BP_JVM_VERSION": "17.*"]
+    docker {
+        host = "//./pipe/dockerDesktopLinuxEngine"
+    }
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }

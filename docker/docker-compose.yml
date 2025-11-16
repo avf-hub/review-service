@@ -1,10 +1,21 @@
 version: "3.8"
 services:
+  review-service:
+    image: "review-service"
+    container_name: "review-service"
+    depends_on:
+      postgres-reviews:
+        condition: service_healthy
+    ports:
+      - "9093:9093"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-reviews:5433/review_service_db
+
   postgres-reviews:
     image: "postgres:16.1"
     container_name: "postgres-reviews"
     ports:
-      - 5433:5433
+      - "5433:5433"
     environment:
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
