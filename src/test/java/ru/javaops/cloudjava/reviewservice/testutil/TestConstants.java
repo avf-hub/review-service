@@ -5,6 +5,8 @@ import java.time.Month;
 
 public class TestConstants {
 
+    public static final String USER_HEADER = "X-User-Name";
+
     public static final String BASE_URL = "/v1/reviews";
     public static final Long MENU_ONE = 1L;
     public static final Long MENU_TWO = 2L;
